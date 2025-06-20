@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Spotlight - Our Echo</title>
+  <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            padding: 0;
+            background: #fff;
+        }
+        header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0px 0px 2px;
+            
+        }
+        .content {
+            /*padding-top: 40px; */
+        }
+        .text-pink {
+            color: #e2308b;
+        }
+      
+        .text-gray {
+            color: #616161;
+        }
+        table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+        /* th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        } */
+        
+        /* header th, header td {
+            border-color: transparent;
+        } */
+        h1,h2,h3,h4,h5,h6,p {
+            margin: 0;
+        }
+        table.header-pink th {
+            color: #e2308b;
+            font-size: 20px;
+            font-weight: bold;
+            border-top: none;
+            border-bottom: none;
+            border-right:none;
+            border-left:none;
+            text-align: center;
+        }
+        table.header-pink td {
+            font-weight: 600;
+            color: #616161;
+            border-top: none;
+            border-bottom: none;
+            border-right:none;
+            border-left:none;
+            vertical-align: start;
+            width: 25%;
+        }
+        .text-center {
+            text-align: center;
+        }
+        table.content-table {
+            th, td {
+                border: none;
+                font-size: 20px;
+                font-weight: normal;
+                color: #616161;
+                vertical-align: top;
+                line-height: 24px;
+            }    
+            h1 {
+                font-size: 24px;
+            }
+        }
+        @media  print {
+            body {
+                width: 210mm;
+                height: 297mm; /* A4 height */
+                margin: 0;
+                /* padding: 2mm; */
+                box-sizing: border-box;
+            }
+            header {
+                position: fixed;
+                top: -20px;
+                left: 0;
+                width: 100%;
+                background: white;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 0px 0 2px;
+            }
+            .content {
+                padding-top: 100px; /* Ensures space below header on all pages */
+                padding-bottom: 10px;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+            .page-break {
+                page-break-before: always;
+                display: block;
+                height: 145px; /* Creates enough space for header */
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            table.content-table td {
+                border-color: transparent;
+            }
+            header th, header td {
+                border-color: transparent;
+            }
+            .footer-table {
+                position: fixed;
+                bottom: 30px;
+                left: 0;
+                width: 100%;
+                background-color: none;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                min-height:30px;
+                border: none;
+            }
+        }
+       
+   
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1c398e;
+      /*margin: 0;*/
+      /*padding: 0;*/
+      /*width: 100%;*/
+      /*height: 100vh; */
+      background-color: #f9fcff;
+      background-image: url(bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; 
+    }
+
+
+    /*table {*/
+    /*  width: 100%;*/
+    /*  border-collapse: collapse;*/
+      
+    /*}*/
+
+    /*.logo {*/
+    /*  width: 250px;*/
+    /*}*/
+
+    .main-title {
+          font-size: 40px;
+    font-weight: 700;
+    color: #2C9BC1;
+    /* line-height: 1.2; */
+    /*  margin-top: 10px; */
+    }
+
+    .section-title {
+      font-size: 22px;
+      color:black;
+      font-weight:700;
+    }
+
+    .quote {
+      font-size: 22px;
+      color: #334174;
+      line-height: 1.2;
+      max-width: 200px;
+      margin-top: 5px;
+      margin-left:60px;
+    }
+
+    .quote-author {
+      font-weight: bold;
+      color: #2C9BC1;
+      font-size: 22px;
+      /*margin-left: 290px;*/
+      margin-top:20px;
+      margin-left: 40px;
+    }
+
+    .activity-header {
+      text-align: right;
+    }
+
+    .activity-title {
+      font-size: 24px;
+      color: #1c398e;
+      font-weight: 600;
+      margin-right:60px;
+    }
+
+
+    .highlight-box {
+      border-radius: 20px;
+      padding:10px;
+      /* padding-left: 50px;
+      padding-right: 0px; */
+    }
+
+    .activity-title {
+      color:#1D8EB6;
+    }
+
+    /*.lgo {*/
+    /*  width: 150px;*/
+    /*}*/
+
+    .coma {
+      width: 170px;
+      margin-top:10px;
+    }
+
+ 
+
+.weekly
+   {
+      font-size: 35px;
+      color: #9481bc;
+      font-weight: 700;
+
+   }
+   .event-table {
+  width: 100%;
+  background: #f1f0fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+
+
+.date {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  width: 120px;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.date sup {
+  font-size: 14px;
+}
+
+.date span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.weekly-table {
+  width:500px;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.event-row {
+ backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.05);
+  height: 100px;
+  
+}
+
+.date-cell {
+      width: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    vertical-align: top;
+    padding: 12px;
+    border-right: 4px solid #32415A;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left: 40px;
+    color: #2A3A53;
+  
+}
+
+.date-cell sup {
+  font-size: 16px;
+  font-weight: 600;
+    color: #2A3A53;
+
+}
+
+.date-cell span {
+  display: block;
+  font-size: 23px;
+  font-weight:600;
+  color: #2a3a53;
+}
+
+.event-details {
+  padding: 13px;
+  vertical-align: top;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #2a3a53;
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 0px;
+  line-height:1.5;
+  
+}
+.icon
+ {
+  width: 20px;
+ }
+     footer {
+
+      background: url('https://abdul-wahabawan.github.io/55-13-2025-Final/assets/bg.png'); 
+
+    }
+    
+    
+    
+
+  </style>
+    <link rel='stylesheet' type='text/css' property='stylesheet' href='//dev-oe.co.uk/_debugbar/assets/stylesheets?v=1707733797&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'><script src='//dev-oe.co.uk/_debugbar/assets/javascript?v=1707733797' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval="false">jQuery.noConflict(true);</script>
+<script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; refStyle.innerHTML = '.phpdebugbar pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }'; doc.head.appendChild(refStyle); refStyle = doc.createElement('style'); doc.head.appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } else if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = '.phpdebugbar pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump span { display: inline; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { display: inline-block; overflow: visible; text-overflow: ellipsis; max-width: 5em; white-space: nowrap; overflow: hidden; vertical-align: top; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis+.sf-dump-ellipsis { max-width: none; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}</style>
+</head>
+<body>
+     <header style="
+     padding-top:5px;padding-left:2px; border-bottom: 2px solid rgb(4, 47, 116);">
+
+        <table style="border:none;">
+            <tr style="border:none;">
+                <th style="text-align: left; width: 40%;border:none;">
+                    <img style="height:60px;border:none;" src="https://dev-oe.co.uk/uploads/themes/uploads/mmt_logo (1).png" alt="">
+                </th>
+                <th style="text-align: right; width: 65%;border:none;">
+                   
+                    <h1 style="font-weight: bold; color:#2C9BC1;font-size:20px;">Activities Magazine</h1>
+                    <h2 style="font-weight:bold; color:rgb(4, 47, 116);font-size:22px" > 23rd June – 29th June </h2>
+                </th>
+            </tr>
+        </table>
+    </header>
+<div class="content" style="padding-left: 0; padding-right: 0;">
+    <table style="width:100%;">
+        <tr>
+          
+          <td style="
+    display: flex;
+    padding-top: 20px;
+">
+            <div class="highlight-box">
+              <div class="weekly">WEEKLY ECHO</div>
+             <div class="section-title">What's on this week ?</div>
+              <div class="main-title">Song-writing<br />genius</div>
+              <img src="quote.png" class="coma" alt="Quote">
+              <div class="quote">
+                Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+              </div>
+              <div class="quote-author">Penelope Wycliffe</div>
+              <br /><br />
+            
+            </div>
+          </td>
+    
+ 
+          <td width="60%"style="
+    /* display: flex; */
+    /* padding-top: 40px; */
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+" >
+            <div class="highlight-box">
+             <table class="weekly-table">
+                  <tr class="event-row">
+                    <td class="date-cell">23<sup>RD</sup><br><span>Monday</span></td>
+                    <td class="event-details">
+                       <img src="icon.png" class="icon" alt="icon"> Antarctic Treaty<br>
+                          <img src="icon.png" class="icon" alt="icon">  1848 - Saxophone<br>
+                          <img src="icon.png" class="icon" alt="icon">  1940 - Adam Faith
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">24<sup>TH</sup><br><span>Tuesday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  Midsummer’s Day<br>
+                          <img src="icon.png" class="icon" alt="icon">  1717 - First Lodge<br>
+                          <img src="icon.png" class="icon" alt="icon">  1964 - Louis Armstrong
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">25<sup>TH</sup><br><span>Wednesday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  1891 - Sherlock Published<br>
+                          <img src="icon.png" class="icon" alt="icon">  1956 - Marilyn Marries<br>
+                          <img src="icon.png" class="icon" alt="icon">  1972 - "Don't cry for me"
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">26<sup>TH</sup><br><span>Thursday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  1959 - The Queen visits Canada<br>
+                          <img src="icon.png" class="icon" alt="icon">  1951 - Lavender Hill Mob<br>
+                          <img src="icon.png" class="icon" alt="icon">  1870 - Valkyrie
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">27<sup>TH</sup><br><span>Friday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  Sunglasses Day<br>
+                          <img src="icon.png" class="icon" alt="icon">  1957 - Smoking warning<br>
+                          <img src="icon.png" class="icon" alt="icon"> 1963 - Brenda Lee
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">28<sup>TH</sup><br><span>Saturday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  1971 - First Scrabble Competition<br>
+                          <img src="icon.png" class="icon" alt="icon"> 1935 - First Rupert Bear Annual<br>
+                          <img src="icon.png" class="icon" alt="icon">  1962 - Come Guided
+                    </td>
+                  </tr>
+                  <tr class="event-row">
+                    <td class="date-cell">29<sup>TH</sup><br><span>Sunday</span></td>
+                    <td class="event-details">
+                          <img src="icon.png" class="icon" alt="icon">  1966 - Barclaycard<br>
+                          <img src="icon.png" class="icon" alt="icon">  1910 - Frank Loesser<br>
+                          <img src="icon.png" class="icon" alt="icon">  1959 - Buddy Holly
+                    </td>
+                  </tr>
+              
+             </table>
+            </div>
+          </td>
+        </tr>
+    </table>
+</div>
+
+
+<table style=" border-top: 2px solid rgb(4, 47, 116);" class="footer-table">
+    <tr>
+        <!--<td style="border: none; text-align: left;"></td>-->
+        <td style=" text-align:left; color:rgb(4, 47, 116);border:none;padding-top:0px;">Copyright © 2025 Our Echo Ltd. </td>
+                 <td style="border: none; text-align: right;padding-top:5px;"><img style="width: 100px;" src="https://dev-oe.co.uk/uploads/themes/uploads/mmt_logo (2).png" alt=""></td>
+        
+    </tr>
+</table>
+
+
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addIndicator("php_version", new PhpDebugBar.DebugBar.Indicator({"icon":"code","tooltip":"PHP Version"}), "right");
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("models", new PhpDebugBar.DebugBar.Tab({"icon":"cubes","title":"Models", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.setDataMap({
+"php_version": ["php.version", ],
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"models": ["models.data", {}],
+"models:badge": ["models.count", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"https:\/\/dev-oe.co.uk\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"Xd6c43bad03718c991225c382b39c1e21","datetime":"2025-06-20 12:12:49","utime":1750421569.679943084716796875,"method":"GET","uri":"\/pdf\/test","ip":"39.63.28.164"},"php":{"version":"8.3.22","interface":"fpm-fcgi"},"messages":{"count":2,"messages":[{"message":"[12:12:49] LOG.warning: Callables of the form [\"Swift_SendmailTransport\", \"Swift_Transport_SendmailTransport::__construct\"] are deprecated in \/home\/devoe\/public_html\/vendor\/swiftmailer\/swiftmailer\/lib\/classes\/Swift\/SendmailTransport.php on line 26","message_html":null,"is_string":false,"label":"warning","time":1750421569.6561920642852783203125,"xdebug_link":null,"collector":"log"},{"message":"[12:12:49] LOG.warning: Creation of dynamic property App\\Http\\Controllers\\AdminController::$imageUpload is deprecated in \/home\/devoe\/public_html\/app\/Http\/Controllers\/AdminController.php on line 46","message_html":null,"is_string":false,"label":"warning","time":1750421569.6663188934326171875,"xdebug_link":null,"collector":"log"}]},"time":{"start":1750421569.3573300838470458984375,"end":1750421569.679956912994384765625,"duration":0.3226268291473388671875,"duration_str":"323ms","measures":[{"label":"Booting","start":1750421569.3573300838470458984375,"relative_start":0,"end":1750421569.648416996002197265625,"relative_end":1750421569.648416996002197265625,"duration":0.2910869121551513671875,"duration_str":"291ms","memory":0,"memory_str":"0B","params":[],"collector":null},{"label":"Application","start":1750421569.64842510223388671875,"relative_start":0.2910950183868408203125,"end":1750421569.6799590587615966796875,"relative_end":2.1457672119140625e-6,"duration":0.0315339565277099609375,"duration_str":"31.53ms","memory":0,"memory_str":"0B","params":[],"collector":null}]},"memory":{"peak_usage":27947240,"peak_usage_str":"27MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":1,"templates":[{"name":"backoffice.pdf.test (resources\/views\/backoffice\/pdf\/test.blade.php)","param_count":0,"params":[],"type":"blade"}]},"route":{"uri":"GET pdf\/test","middleware":"web","controller":"App\\Http\\Controllers\\AdminController@test_pdf","namespace":null,"prefix":"","where":[],"file":"<a href=\"phpstorm:\/\/open?file=\/home\/devoe\/public_html\/app\/Http\/Controllers\/AdminController.php&line=1079\">app\/Http\/Controllers\/AdminController.php:1079-1085<\/a>"},"queries":{"nb_statements":2,"nb_failed_statements":0,"accumulated_duration":0.002109999999999999896471702953704152605496346950531005859375,"accumulated_duration_str":"2.11ms","statements":[{"sql":"select * from `mmt_groups` where `id` = 26","type":"query","params":[],"bindings":["26"],"hints":null,"show_copy":false,"backtrace":[{"index":12,"namespace":"view","name":"9ca320228cbc3ffd55a20420d7059eb3074c9d0e","line":348},{"index":14,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":17,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00175000000000000003642919299551294898265041410923004150390625,"duration_str":"1.75ms","stmt_id":"view::9ca320228cbc3ffd55a20420d7059eb3074c9d0e:348","connection":"devoe_ourecho_db","start_percent":0,"width_percent":82.9380000000000023874235921539366245269775390625},{"sql":"select * from `mmt_groups` where `id` = 26","type":"query","params":[],"bindings":["26"],"hints":null,"show_copy":false,"backtrace":[{"index":12,"namespace":"view","name":"9ca320228cbc3ffd55a20420d7059eb3074c9d0e","line":349},{"index":14,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":17,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.000359999999999999968462727206741647023591212928295135498046875,"duration_str":"360\u03bcs","stmt_id":"view::9ca320228cbc3ffd55a20420d7059eb3074c9d0e:349","connection":"devoe_ourecho_db","start_percent":82.9380000000000023874235921539366245269775390625,"width_percent":17.062000000000001165290086646564304828643798828125}]},"models":{"data":[],"count":0},"swiftmailer_mails":{"count":0,"mails":[]},"gate":{"count":0,"messages":[]},"session":{"_token":"WvFMsMH9AS5J70AKeRgSi9HHrdyXPXO05MJQ73bA","_previous":"array:1 [\n  \"url\" => \"https:\/\/dev-oe.co.uk\/pdf\/test\"\n]","_flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"path_info":"\/pdf\/test","status_code":"<pre class=sf-dump id=sf-dump-1580942720 data-indent-pad=\"  \"><span class=sf-dump-num>200<\/span>\n<\/pre><script>Sfdump(\"sf-dump-1580942720\", {\"maxDepth\":0})<\/script>\n","status_text":"OK","format":"html","content_type":"text\/html; charset=UTF-8","request_query":"<pre class=sf-dump id=sf-dump-1921158569 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-1921158569\", {\"maxDepth\":0})<\/script>\n","request_request":"<pre class=sf-dump id=sf-dump-1028884619 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-1028884619\", {\"maxDepth\":0})<\/script>\n","request_headers":"<pre class=sf-dump id=sf-dump-1435515130 data-indent-pad=\"  \"><span class=sf-dump-note>array:15<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>x-https<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-language<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"26 characters\">en-GB,en-US;q=0.9,en;q=0.8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-encoding<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"23 characters\">gzip, deflate, br, zstd<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-dest<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-user<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-mode<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-site<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"4 characters\">none<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>user-agent<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"111 characters\">Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>upgrade-insecure-requests<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-platform<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"9 characters\">&quot;Windows&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-mobile<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"65 characters\">&quot;Google Chrome&quot;;v=&quot;137&quot;, &quot;Chromium&quot;;v=&quot;137&quot;, &quot;Not\/A)Brand&quot;;v=&quot;24&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>connection<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>host<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1435515130\", {\"maxDepth\":0})<\/script>\n","request_server":"<pre class=sf-dump id=sf-dump-522221339 data-indent-pad=\"  \"><span class=sf-dump-note>array:62<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>USER<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">devoe<\/span>\"\n  \"<span class=sf-dump-key>HOME<\/span>\" => \"<span class=sf-dump-str title=\"11 characters\">\/home\/devoe<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_NAME<\/span>\" => \"<span class=sf-dump-str title=\"17 characters\">\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_URI<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>QUERY_STRING<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REQUEST_METHOD<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PROTOCOL<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">HTTP\/1.1<\/span>\"\n  \"<span class=sf-dump-key>GATEWAY_INTERFACE<\/span>\" => \"<span class=sf-dump-str title=\"7 characters\">CGI\/1.1<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_URL<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">\/public\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_PORT<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">62267<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_FILENAME<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">\/home\/devoe\/public_html\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADMIN<\/span>\" => \"<span class=sf-dump-str title=\"22 characters\">webmaster@dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>CONTEXT_DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"23 characters\">\/home\/devoe\/public_html<\/span>\"\n  \"<span class=sf-dump-key>CONTEXT_PREFIX<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REQUEST_SCHEME<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">https<\/span>\"\n  \"<span class=sf-dump-key>DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"23 characters\">\/home\/devoe\/public_html<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">39.63.28.164<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PORT<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">443<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">109.228.51.231<\/span>\"\n  \"<span class=sf-dump-key>SERVER_NAME<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SOFTWARE<\/span>\" => \"<span class=sf-dump-str title=\"6 characters\">Apache<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SIGNATURE<\/span>\" => \"\"\n  \"<span class=sf-dump-key>PATH<\/span>\" => \"<span class=sf-dump-str title=\"180 characters\">\/usr\/local\/jdk\/bin:\/usr\/kerberos\/sbin:\/usr\/kerberos\/bin:\/usr\/local\/sbin:\/usr\/local\/bin:\/sbin:\/bin:\/usr\/sbin:\/usr\/bin:\/usr\/X11R6\/bin:\/usr\/local\/bin:\/usr\/X11R6\/bin:\/root\/bin:\/opt\/bin<\/span>\"\n  \"<span class=sf-dump-key>HTTP_X_HTTPS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_LANGUAGE<\/span>\" => \"<span class=sf-dump-str title=\"26 characters\">en-GB,en-US;q=0.9,en;q=0.8<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_ENCODING<\/span>\" => \"<span class=sf-dump-str title=\"23 characters\">gzip, deflate, br, zstd<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_DEST<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_USER<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_MODE<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_SITE<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">none<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT<\/span>\" => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7<\/span>\"\n  \"<span class=sf-dump-key>HTTP_USER_AGENT<\/span>\" => \"<span class=sf-dump-str title=\"111 characters\">Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36<\/span>\"\n  \"<span class=sf-dump-key>HTTP_UPGRADE_INSECURE_REQUESTS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_PLATFORM<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">&quot;Windows&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_MOBILE<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA<\/span>\" => \"<span class=sf-dump-str title=\"65 characters\">&quot;Google Chrome&quot;;v=&quot;137&quot;, &quot;Chromium&quot;;v=&quot;137&quot;, &quot;Not\/A)Brand&quot;;v=&quot;24&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_CONNECTION<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  \"<span class=sf-dump-key>HTTP_HOST<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>proxy-nokeepalive<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_URI<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">https:\/\/dev-oe.co.uk\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_URL<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>UNIQUE_ID<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">aFVQQVNj0G2VtaP2QuqQ-gAAAA4<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_STATUS<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">200<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SCRIPT_URI<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">https:\/\/dev-oe.co.uk\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SCRIPT_URL<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_UNIQUE_ID<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">aFVQQVNj0G2VtaP2QuqQ-gAAAA4<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_STATUS<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">200<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">dev-oe.co.uk<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_SCRIPT_URI<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">https:\/\/dev-oe.co.uk\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_SCRIPT_URL<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">\/pdf\/test<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_REDIRECT_UNIQUE_ID<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">aFVQQVNj0G2VtaP2QuqQ-gAAAA4<\/span>\"\n  \"<span class=sf-dump-key>FCGI_ROLE<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">RESPONDER<\/span>\"\n  \"<span class=sf-dump-key>PHP_SELF<\/span>\" => \"<span class=sf-dump-str title=\"17 characters\">\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_TIME_FLOAT<\/span>\" => <span class=sf-dump-num>1750421569.3573<\/span>\n  \"<span class=sf-dump-key>REQUEST_TIME<\/span>\" => <span class=sf-dump-num>1750421569<\/span>\n  \"<span class=sf-dump-key>argv<\/span>\" => []\n  \"<span class=sf-dump-key>argc<\/span>\" => <span class=sf-dump-num>0<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-522221339\", {\"maxDepth\":0})<\/script>\n","request_cookies":"<pre class=sf-dump id=sf-dump-483336902 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-483336902\", {\"maxDepth\":0})<\/script>\n","response_headers":"<pre class=sf-dump id=sf-dump-985235292 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>content-type<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"24 characters\">text\/html; charset=UTF-8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cache-control<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">no-cache, private<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>date<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"29 characters\">Fri, 20 Jun 2025 12:12:49 GMT<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>set-cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"428 characters\">XSRF-TOKEN=eyJpdiI6InllMFh4dHFCNEUvV3hEK0ZiU1VQbkE9PSIsInZhbHVlIjoiVmV5dUhmVzg1cnB0a2lvVGNZYjcxYTc4VW13QU1vWVNjWWNLcW1yMTMxd0FwSVBjNjBuL3Z4YTBsK2k1TTEyREFyS1R1MlJsUlRFL1k1WUFPNVYvVUZESnFHZi9wandJZTVlNUxaVG0yS09RUGhFY25DMUlFeUFIQXhNVUVHRGEiLCJtYWMiOiI3NjAxZWNjMmRkOWMyZjFhYzY0OWMzMWY3Mjk5NTcwZjc1MTAyZWVmM2FjN2U1MGQxZTkxNDhiMDk1MTE3M2QzIiwidGFnIjoiIn0%3D; expires=Fri, 20-Jun-2025 14:12:49 GMT; Max-Age=7200; path=\/; samesite=lax<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"443 characters\">ourecho_session=eyJpdiI6IiszdTdha0hLTlhkWnJOQmpDVDg4MWc9PSIsInZhbHVlIjoicEhrUTRmaCsrZVZmc0JUUUsxV2JSZUdEVmR0ZFJCZFZibWpUbitrM3d2dXcvN2V2czZ4NUNuclJ2UjBJOEN6YmE3MStCYVVUNjkrMXllL21GT2c5VUNuSkVQd2toVGVkRUlKU1dsdVB1UFpUYlBHc1NobnhQTzMrVzZ6UHQ2Q2giLCJtYWMiOiI2OThkMTczNzNhNGI0ODE1MDlkOTQ3MzU0YmE3MDM5OTRlMTllMGY4YjZkOThjNjYxMzNiZjMyYmE5MTExNzBhIiwidGFnIjoiIn0%3D; expires=Fri, 20-Jun-2025 14:12:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>Set-Cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"400 characters\">XSRF-TOKEN=eyJpdiI6InllMFh4dHFCNEUvV3hEK0ZiU1VQbkE9PSIsInZhbHVlIjoiVmV5dUhmVzg1cnB0a2lvVGNZYjcxYTc4VW13QU1vWVNjWWNLcW1yMTMxd0FwSVBjNjBuL3Z4YTBsK2k1TTEyREFyS1R1MlJsUlRFL1k1WUFPNVYvVUZESnFHZi9wandJZTVlNUxaVG0yS09RUGhFY25DMUlFeUFIQXhNVUVHRGEiLCJtYWMiOiI3NjAxZWNjMmRkOWMyZjFhYzY0OWMzMWY3Mjk5NTcwZjc1MTAyZWVmM2FjN2U1MGQxZTkxNDhiMDk1MTE3M2QzIiwidGFnIjoiIn0%3D; expires=Fri, 20-Jun-2025 14:12:49 GMT; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"415 characters\">ourecho_session=eyJpdiI6IiszdTdha0hLTlhkWnJOQmpDVDg4MWc9PSIsInZhbHVlIjoicEhrUTRmaCsrZVZmc0JUUUsxV2JSZUdEVmR0ZFJCZFZibWpUbitrM3d2dXcvN2V2czZ4NUNuclJ2UjBJOEN6YmE3MStCYVVUNjkrMXllL21GT2c5VUNuSkVQd2toVGVkRUlKU1dsdVB1UFpUYlBHc1NobnhQTzMrVzZ6UHQ2Q2giLCJtYWMiOiI2OThkMTczNzNhNGI0ODE1MDlkOTQ3MzU0YmE3MDM5OTRlMTllMGY4YjZkOThjNjYxMzNiZjMyYmE5MTExNzBhIiwidGFnIjoiIn0%3D; expires=Fri, 20-Jun-2025 14:12:49 GMT; path=\/; httponly<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-985235292\", {\"maxDepth\":0})<\/script>\n","session_attributes":"<pre class=sf-dump id=sf-dump-720713811 data-indent-pad=\"  \"><span class=sf-dump-note>array:4<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_token<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">WvFMsMH9AS5J70AKeRgSi9HHrdyXPXO05MJQ73bA<\/span>\"\n  \"<span class=sf-dump-key>_previous<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>url<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">https:\/\/dev-oe.co.uk\/pdf\/test<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>_flash<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>old<\/span>\" => []\n    \"<span class=sf-dump-key>new<\/span>\" => []\n  <\/samp>]\n  \"<span class=sf-dump-key>PHPDEBUGBAR_STACK_DATA<\/span>\" => []\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-720713811\", {\"maxDepth\":0})<\/script>\n"}}, "Xd6c43bad03718c991225c382b39c1e21");
+
+</script>
+</body>
+</html>
